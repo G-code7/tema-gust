@@ -1,0 +1,183 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+      <div class="container-fluid">
+        <!-- Logo con hover naranja -->
+        <a class="navbar-brand" href="#">
+          <img src="./images/logo-ipsum.svg" alt="Logo" class="navbar-logo"> <!-- Reemplaza con tu logo -->
+        </a>
+        
+        <!-- Botón hamburguesa -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+    
+        <!-- Contenido del navbar -->
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <!-- Elementos a la izquierda -->
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="#">Blog</a>
+            </li>
+          </ul>
+    
+          <!-- Menú a la derecha -->
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" href="#top">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Servicios</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contacto</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- Navbar -->
+
+    <!-- subscribe -->
+
+    <div class="container-fluid subscribe pt-5 d-flex flex-column justify-content-center align-items-center">
+      <div class="text-center text-white mb-5 d-flex flex-column justify-content-center align-items-center">
+        <h1 class="display-4 mb-4">Lorem ipsum dolor sit amet</h1>
+        
+        <!-- Formulario -->
+        <div class="subscribe-form">
+          <form action="" class="needs-validation" novalidate>
+            <div class="form-group mb-3">
+              <input type="text" placeholder="Nombre" class="form-control form-control-custom p-3 mb-3" required>
+            </div>
+            <div class="form-group mb-4">
+              <input type="email" placeholder="Email" class="form-control form-control-custom p-3 mb-3" required>
+            </div>
+            <div class="form-group">
+              <button type="submit" class="btn btn-custom w-100 p-3">Enviar</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <!-- subscribe -->
+
+    <!-- Content -->
+     
+    <section class="container my-5">
+        <div class="row justify-content-center">
+        <div class="col-12 col-lg-10 col-xl-8">
+            <!-- Encabezado -->
+            <div class="mb-5 text-center">
+            <h2 class="display-5 fw-bold mb-3">Lorem ipsum dolor sit amet</h2>
+            <div class="title-divider"></div>
+            </div>
+    
+            <!-- Contenido -->
+            <article class="content-body">
+            <p class="lead text-muted mb-4">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus consequuntur quibusdam veniam beatae quas error molestias ratione quasi, placeat odio deleniti odit voluptatibus...
+            </p>
+    
+            <div class="text-content">
+                <p class="mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus consequuntur quibusdam veniam beatae quas error molestias ratione quasi, placeat odio deleniti odit voluptatibus, ea voluptatum temporibus vero rerum! Odio mollitia...</p>
+    
+                <div class="divider-line my-5"></div>
+    
+                <p class="mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus consequuntur quibusdam veniam beatae quas error molestias ratione quasi, placeat odio deleniti odit voluptatibus, ea voluptatum temporibus vero rerum! Odio mollitia...</p>
+            </div>
+    
+            <!-- Elemento de destacado -->
+            <div class="highlight-box p-4 my-5 bg-light rounded-3 border-start border-4 border-primary">
+                <p class="mb-0 fst-italic">"Repudiandae vero accusamus inventore voluptatem repellat officia quas, corrupti reprehenderit rem cumque nulla provident omnis quia tempora"</p>
+            </div>
+            </article>
+    
+            <!-- Actualizado -->
+            <div class="text-end mt-5">
+            <small class="text-muted">Última actualización: marzo 2023</small>
+            </div>
+        </div>
+        </div>
+    </section>
+    <!-- Content -->
+
+
+    <!-- footer -->
+
+    <footer class="container-fluid bg-dark text-white">
+        <div class="container pt-5 pb-4">
+          <div class="row g-4 align-items-center">
+            <!-- Logo -->
+            <div class="col-12 col-md-3 text-center text-md-start">
+              <a href="#" class="d-inline-block footer-logo">
+                <img src="./images/logo-ipsum.svg" alt="Logo" class="img-fluid navbar-logo" style="height: 45px;">
+              </a>
+            </div>
+      
+            <!-- Menú -->
+            <div class="col-12 col-md-6">
+              <ul class="nav justify-content-center footer-menu">
+                <li class="nav-item">
+                  <a href="#" class="nav-link text-white">Inicio</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link text-white">Servicios</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link text-white">Blog</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link text-white">Contacto</a>
+                </li>
+              </ul>
+            </div>
+      
+            <!-- Redes Sociales -->
+            <div class="col-12 col-md-3 text-center text-md-end">
+              <div class="social-links">
+                <a href="#" class="text-white text-decoration-none me-3">
+                  <i class="fab fa-facebook"></i>
+                </a>
+                <a href="#" class="text-white text-decoration-none me-3">
+                  <i class="fab fa-twitter"></i>
+                </a>
+                <a href="#" class="text-white text-decoration-none">
+                  <i class="fab fa-instagram"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+      
+          <!-- Párrafo -->
+          <div class="row mt-4">
+            <div class="col-12 text-center">
+              <p class="mb-0 opacity-75">Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic a laudantium sapiente fugiat sint aliquam in.</p>
+            </div>
+          </div>
+      
+          <!-- Copyright -->
+          <div class="row mt-4 border-top pt-3">
+            <div class="col-12 text-center">
+              <small class="text-white-50">Powered by Gustavo ⚡ - © 2025 Todos los derechos reservados</small>
+            </div>
+          </div>
+        </div>
+      </footer>
+  
+      <!-- footer -->
+  
+      <!-- Scripts -->
+      <script src="./js/bootstrap.bundle.min.js"></script>
+    </body>
+  </html>

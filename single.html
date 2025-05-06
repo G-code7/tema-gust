@@ -1,0 +1,262 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+      <div class="container-fluid">
+        <!-- Logo con hover naranja -->
+        <a class="navbar-brand" href="#">
+          <img src="./images/logo-ipsum.svg" alt="Logo" class="navbar-logo"> <!-- Reemplaza con tu logo -->
+        </a>
+        
+        <!-- Botón hamburguesa -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+    
+        <!-- Contenido del navbar -->
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <!-- Elementos a la izquierda -->
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="#">Blog</a>
+            </li>
+          </ul>
+    
+          <!-- Menú a la derecha -->
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" href="#top">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Servicios</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contacto</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- Navbar -->
+
+    <!-- subscribe -->
+
+    <div class="container-fluid subscribe pt-5 d-flex flex-column justify-content-center align-items-center">
+      <div class="text-center text-white mb-5 d-flex flex-column justify-content-center align-items-center">
+        <h1 class="display-4 mb-4">Lorem ipsum dolor sit amet</h1>
+        
+        <!-- Formulario -->
+        <div class="subscribe-form">
+          <form action="" class="needs-validation" novalidate>
+            <div class="form-group mb-3">
+              <input type="text" placeholder="Nombre" class="form-control form-control-custom p-3 mb-3" required>
+            </div>
+            <div class="form-group mb-4">
+              <input type="email" placeholder="Email" class="form-control form-control-custom p-3 mb-3" required>
+            </div>
+            <div class="form-group">
+              <button type="submit" class="btn btn-custom w-100 p-3">Enviar</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <!-- subscribe -->
+
+    <!-- Content -->
+     
+    <section class="container my-5">
+        <div class="row justify-content-center">
+        <div class="col-12 col-lg-9 col-xl-8">
+            <!-- Encabezado -->
+            <article class="article-content">
+            <!-- Cabecera del artículo -->
+            <div class="article-header mb-5">
+                <h1 class="display-5 fw-bold mb-3">Lorem ipsum dolor sit amet consectetur</h1>
+                <div class="meta d-flex align-items-center gap-3 mb-4">
+                <span class="badge bg-primary">Categoría</span>
+                <time class="text-muted" datetime="2023-03-15">15 Marzo 2023</time>
+                </div>
+            </div>
+            <!-- Imagen destacada -->
+            <figure class="article-image mb-5">
+                <img src="./images/image-prueba.jpg" alt="Imagen de artículo" 
+                    class="img-fluid rounded-3 shadow-sm" 
+                    style="max-height: 500px; width: 100%; object-fit: cover;">
+                <figcaption class="text-center mt-2 text-muted small">Descripción de la imagen</figcaption>
+            </figure>
+    
+            <!-- Cuerpo del artículo -->
+            <div class="article-body">
+                <div class="lead mb-5 text-muted">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam iusto molestias, dolor voluptate quibusdam ipsam ad veniam tenetur eligendi incidunt esse voluptatum tempora sequi quia aperiam molestiae consequatur sed fuga...</p>
+                </div>
+    
+                <!-- Texto principal con mejor formato -->
+                <div class="main-text">
+                <p class="mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus consequuntur quibusdam veniam beatae quas error molestias ratione quasi, placeat odio deleniti odit voluptatibus, ea voluptatum temporibus vero rerum! Odio mollitia...</p>
+    
+                <div class="divider my-5"></div>
+    
+                <h3 class="h4 mb-4">Subtítulo relevante</h3>
+                <p class="mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus consequuntur quibusdam veniam beatae quas error molestias ratione quasi, placeat odio deleniti odit voluptatibus, ea voluptatum temporibus vero rerum! Odio mollitia...</p>
+    
+                <!-- Cita destacada -->
+                <blockquote class="blockquote bg-light p-4 rounded-3 my-5 border-start border-3 border-primary">
+                    <p class="mb-0 fst-italic">"Repudiandae vero accusamus inventore voluptatem repellat officia quas, corrupti reprehenderit rem cumque"</p>
+                </blockquote>
+    
+                <p class="mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus consequuntur quibusdam veniam beatae quas error molestias ratione quasi, placeat odio deleniti odit voluptatibus, ea voluptatum temporibus vero rerum! Odio mollitia...</p>
+                </div>
+            </div>
+            
+            <!-- Autor y redes -->
+            <div class="article-footer mt-5 pt-4 border-top">
+                <div class="d-flex gap-3 align-items-center mb-3">
+                <img src="./images/author.jpg" alt="Autor" 
+                    class="rounded-circle" 
+                    style="width: 60px; height: 60px; object-fit: cover;">
+                <div>
+                    <h4 class="h6 mb-0">Gustavo Pérez</h4>
+                    <small class="text-muted">Editor Principal</small>
+                </div>
+                </div>
+                <div class="social-share">
+                <span class="text-muted me-2">Compartir:</span>
+                <a href="#" class="text-decoration-none me-3 text-primary">
+                    <i class="fab fa-facebook"></i>
+                </a>
+                <a href="#" class="text-decoration-none me-3 text-primary">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a href="#" class="text-decoration-none text-primary">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                </div>
+            </div>
+            </article>
+        </div>        
+            <!-- aside -->
+            <div class="col-12 col-lg-3 mt-5 mt-lg-0">
+                <aside class="sidebar">
+                  <!-- Sección del autor en el aside -->
+                  <div class="author-card bg-light p-4 rounded-3 mb-4 shadow-sm">
+                    <div class="d-flex gap-3 align-items-center mb-3">
+                      <img src="./images/author.jpg" alt="Autor" 
+                           class="rounded-circle"
+                           style="width: 60px; height: 60px; object-fit: cover;">
+                      <div>
+                        <h4 class="h6 mb-0">Gustavo Pérez</h4>
+                        <small class="text-muted">Editor Principal</small>
+                      </div>
+                    </div>
+                    <div class="social-share">
+                      <span class="text-muted me-2">Sígueme:</span>
+                      <a href="#" class="text-decoration-none me-3 text-primary">
+                        <i class="fab fa-twitter"></i>
+                      </a>
+                      <a href="#" class="text-decoration-none text-primary">
+                        <i class="fab fa-linkedin"></i>
+                      </a>
+                    </div>
+                  </div>
+          
+                  <!-- Widget adicional -->
+                  <div class="sidebar-widget bg-light p-4 rounded-3 shadow-sm">
+                    <h3 class="h5 mb-3">Artículos recientes</h3>
+                    <ul class="list-unstyled">
+                      <li class="mb-2">
+                        <a href="#" class="text-decoration-none">Título del artículo 1</a>
+                      </li>
+                      <li class="mb-2">
+                        <a href="#" class="text-decoration-none">Título del artículo 2</a>
+                      </li>
+                      <li class="mb-2">
+                        <a href="#" class="text-decoration-none">Título del artículo 3</a>
+                      </li>
+                    </ul>
+                  </div>
+                </aside>
+              </div>
+        </div>
+    </section>
+    <!-- Content -->
+
+
+    <!-- footer -->
+
+    <footer class="container-fluid bg-dark text-white">
+        <div class="container pt-5 pb-4">
+          <div class="row g-4 align-items-center">
+            <!-- Logo -->
+            <div class="col-12 col-md-3 text-center text-md-start">
+              <a href="#" class="d-inline-block footer-logo">
+                <img src="./images/logo-ipsum.svg" alt="Logo" class="img-fluid navbar-logo" style="height: 45px;">
+              </a>
+            </div>
+      
+            <!-- Menú -->
+            <div class="col-12 col-md-6">
+              <ul class="nav justify-content-center footer-menu">
+                <li class="nav-item">
+                  <a href="#" class="nav-link text-white">Inicio</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link text-white">Servicios</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link text-white">Blog</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link text-white">Contacto</a>
+                </li>
+              </ul>
+            </div>
+      
+            <!-- Redes Sociales -->
+            <div class="col-12 col-md-3 text-center text-md-end">
+              <div class="social-links">
+                <a href="#" class="text-white text-decoration-none me-3">
+                  <i class="fab fa-facebook"></i>
+                </a>
+                <a href="#" class="text-white text-decoration-none me-3">
+                  <i class="fab fa-twitter"></i>
+                </a>
+                <a href="#" class="text-white text-decoration-none">
+                  <i class="fab fa-instagram"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+      
+          <!-- Párrafo -->
+          <div class="row mt-4">
+            <div class="col-12 text-center">
+              <p class="mb-0 opacity-75">Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic a laudantium sapiente fugiat sint aliquam in.</p>
+            </div>
+          </div>
+      
+          <!-- Copyright -->
+          <div class="row mt-4 border-top pt-3">
+            <div class="col-12 text-center">
+              <small class="text-white-50">Powered by Gustavo ⚡ - © 2025 Todos los derechos reservados</small>
+            </div>
+          </div>
+        </div>
+      </footer>
+  
+      <!-- footer -->
+  
+      <!-- Scripts -->
+      <script src="./js/bootstrap.bundle.min.js"></script>
+    </body>
+  </html>
