@@ -298,44 +298,40 @@
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
       <div class="container-fluid">
-        <!-- Logo con hover naranja -->
-        <a class="navbar-brand" href="#">
-          <img src="<?php bloginfo('template_url' ); ?>/images/logo-ipsum.svg" alt="Logo" class="navbar-logo"> <!-- Reemplaza con tu logo -->
-        </a>
-        
-        <!-- Botón hamburguesa -->
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-    
-        <!-- Contenido del navbar -->
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <!-- Elementos a la izquierda -->
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link" href="#">Blog</a>
-            </li>
-          </ul>
-    
-          <!-- Menú a la derecha -->
-          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link active" href="#top">Inicio</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Servicios</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Contacto</a>
-            </li>
-          </ul>
-        </div>
+          <a class="navbar-brand" href="#">
+              <img src="<?php bloginfo('template_url' ); ?>/images/logo-ipsum.svg" alt="Logo" class="navbar-logo">
+          </a>
+
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent">
+              <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <?php
+              wp_nav_menu(array(
+                  'theme_location'  => 'superior-izquierda',
+                  'depth'           => 2,
+                  'container'       => false,
+                  'menu_class'      => 'navbar-nav me-auto mb-2 mb-lg-0',
+                  'fallback_cb'     => 'WP_Bootstrap_Navwalker::fallback',
+              ));
+              ?>
+
+              <?php
+              wp_nav_menu(array(
+                  'theme_location'  => 'superior-derecha',
+                  'depth'           => 2,
+                  'container'       => false,
+                  'menu_class'      => 'navbar-nav ms-auto mb-2 mb-lg-0',
+                  'fallback_cb'     => 'WP_Bootstrap_Navwalker::fallback',
+              ));
+              ?>
+          </div>
       </div>
     </nav>
     <!-- Navbar -->
 
     <!-- subscribe -->
-
     <div class="container-fluid subscribe pt-5 d-flex flex-column justify-content-center align-items-center">
       <div class="text-center text-white mb-5 d-flex flex-column justify-content-center align-items-center">
         <h1 class="display-4 mb-4">Lorem ipsum dolor sit amet</h1>
